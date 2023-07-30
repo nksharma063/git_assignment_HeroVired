@@ -25,6 +25,8 @@ class Calculator:
       return mul
     
     def div(self, a,b):
+      if b ==0:
+         raise ValueError("cannot divide by zero")
       return a / b
                     
 if __name__ == "__main__":
