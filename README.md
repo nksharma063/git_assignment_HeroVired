@@ -1,7 +1,7 @@
-#git_assignment_HeroVired
-##All topics covered below are prvided by Hero Vired Faculty and to pratice and document all steps fr solution after the problem statement. 
+# git_assignment_HeroVired
+## All topics covered below are prvided by Hero Vired Faculty and to pratice and document all steps fr solution after the problem statement. 
 
-Q.1: You are part of a development team working on a Python application called "CalculatorPlus." The application provides basic arithmetic operations, such as addition, subtraction, multiplication, and division. Your task is to implement a new feature that adds support for calculating the square root of a number. 
+#### Q.1: You are part of a development team working on a Python application called "CalculatorPlus." The application provides basic arithmetic operations, such as addition, subtraction, multiplication, and division. Your task is to implement a new feature that adds support for calculating the square root of a number. 
 
 a.Create a repository name: git_assignment_HeroVired
 b.Create a ‘dev’ branch and add this code.
@@ -13,7 +13,7 @@ def multiply(self, a, b):
 return a * b
 def divide(self, a, b): return a / b
 
-####TODO: Implement the following function to calculate the square root of a number.
+#### TODO: Implement the following function to calculate the square root of a number.
 def square_root(self, x):
 return math.sqrt(x)
 You need to uncomment the above function and complete its implementation to add the square root feature.
@@ -24,8 +24,8 @@ num1 = 16
 num2 = 4
 print(f"{num1} + {num2} = {calculator.add(num1, num2)}") print(f"{num1} - {num2} = {calculator.subtract(num1, num2)}") print(f"{num1} * {num2} = {calculator.multiply(num1, num2)}") print(f"{num1} / {num2} = {calculator.divide(num1, num2)}")
 
-####TODO: Uncomment and test the square root feature. # num3 = 25
-####print(f"The square root of {num3} = {calculator.square_root(num3)}")
+####T ODO: Uncomment and test the square root feature. # num3 = 25
+#### print(f"The square root of {num3} = {calculator.square_root(num3)}")
 
 c.Merge this branch with the main branch and make a release of version 1 of the ‘calculator plus app’.
 d.Add any of your classmates as collaborators.
