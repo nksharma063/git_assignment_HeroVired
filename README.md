@@ -43,3 +43,8 @@ j.Once the code reviewer approves your pull request, merge the "feature/sqrt" br
 k.Finally, do the testing in the ‘dev’ branch itself and merge it into the ‘main’ branch and create a ‘version 2’ release.
 
 Solution:
+
+### Edited the file and created one class calculator with just one init methods to initiate the class.
+#### Added Dev branch worked and added logical fucntions and then created on object and called them by passing parameters.
+##### Added feature/sqrt and started adding the sqrt fucntion.
+####### Got some feature update in Dev branch, updated the value error and started working on feature qsqrt, invited one collaboartor, will asked for feedback and merge the feature sqrt to Dev and then to Main to release verson 2.
