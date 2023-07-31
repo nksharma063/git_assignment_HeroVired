@@ -49,11 +49,129 @@ Solution:
 ##### Added feature/sqrt and started adding the sqrt fucntion.
 ####### Got some feature update in Dev branch, updated the value error and started working on feature qsqrt, invited one collaboartor, will asked for feedback and merge the feature sqrt to Dev and then to Main to release verson 2.
 
+### Q.2: For a project that deals with large binary files, integrate Git LFS (Large File Storage) to handle these files efficiently. Demonstrate how to add, commit, and push binary files to the repository, ensuring they are tracked by Git LFS correctly. Clone the repository on another machine to verify that the binary files are downloaded correctly. 
+
+Git lfs will list all the details about lfs.
+This works in multiple way basically it hold the pointer in repo and upoad teh large file to git server and later you can download them for use.
+
+git lfs install
+git lfs track "*.iso", "*.pdf", "*.gzip", "*.zip"
+git add .gitattributes  --> it will add above extesion so in future when you will do some activity in branch , it will perform some oeratopn.
+git checkout to branch
+git commit , add and push to branch normally
+
+Complete Documentation
+In the repository ‘git_assignment_HeroVired’, create a branch ‘lfs’. Upload any large file whose size is over ‘200mb’ and try to push this file into the repository. 
+Like Git, Git LFS commands are separated into high level ("porcelain")
+commands and low level ("plumbing") commands.
+
+
+
+
+=== High level porcelain commands
+
+git lfs checkout:
+  Populate working copy with real content from Git LFS files.
+git lfs dedup:
+  De-duplicate Git LFS files.
+git lfs env:
+  Display the Git LFS environment.
+git lfs ext:
+  Display Git LFS extension details.
+git lfs fetch:
+  Download Git LFS files from a remote.
+git lfs fsck:
+  Check Git LFS files for consistency.
+git lfs install:
+  Install Git LFS configuration.
+git lfs lock:
+  Set a file as "locked" on the Git LFS server.
+git lfs locks:
+  List currently "locked" files from the Git LFS server.
+git lfs logs:
+  Show errors from the Git LFS command.
+git lfs ls-files:
+  Show information about Git LFS files in the index
+  and working tree.
+git lfs migrate:
+  Migrate history to or from Git LFS
+git lfs prune:
+  Delete old Git LFS files from local storage
+git lfs pull:
+  Fetch Git LFS changes from the remote & checkout any required working tree
+  files.
+git lfs push:
+  Push queued large files to the Git LFS endpoint.
+git lfs status:
+  Show the status of Git LFS files in the working
+  tree.
+git lfs track:
+  View or add Git LFS paths to Git attributes.
+git lfs uninstall:
+  Uninstall Git LFS by removing hooks and smudge/clean filter configuration.
+git lfs unlock:
+  Remove "locked" setting for a file on the Git LFS server.
+git lfs untrack:
+  Remove Git LFS paths from Git Attributes.
+git lfs update:
+  Update Git hooks for the current Git repository.
+git lfs version:
+  Report the version number.
+
+=== Low level plumbing commands
+
+git lfs clean:
+  Git clean filter that converts large files to pointers.
+git lfs filter-process:
+  Git process filter that converts between large files and pointers.
+git lfs merge-driver:
+  Merge text-based LFS files
+git lfs pointer:
+  Build and compare pointers.
+git lfs post-checkout:
+  Git post-checkout hook implementation.
+git lfs post-commit:
+  Git post-commit hook implementation.
+git lfs post-merge:
+  Git post-merge hook implementation.
+git lfs pre-push:
+  Git pre-push hook implementation.
+git lfs smudge:
+  Git smudge filter that converts pointer in blobs to the actual content.
+git lfs standalone-file:
+  Git LFS standalone transfer adapter for file URLs (local paths).
+
+Examples
+--------
+
+To get started with Git LFS, the following commands can be used.
+
+. Setup Git LFS on your system. You only have to do this once per user
+account:
++
+
+git lfs install
+
+. Choose the type of files you want to track, for examples all ISO
+images, with git lfs track:
++
+
+git lfs track "*.iso"
+
+. The above stores this information in gitattributes(5) files, so that
+file needs to be added to the repository:
++
+
+
+. Commit, push and work with the files normally:
++
+
+git add file.iso
+git commit -m "Add disk image"
+git push
 
 ### Question 3
 #### Q.3: In this same GitHub repository, create a new branch ‘geometry-calculator’, we'll work on a simple Python program that calculates the area of a circle and the area of a rectangle. We'll use Git stash to switch between working on multiple features (calculating circle area and calculating rectangle area) without committing incomplete changes.
-
- 
 
 import math
 class GeometryCalculator:
