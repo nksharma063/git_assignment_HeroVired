@@ -60,6 +60,15 @@ git add .gitattributes  --> it will add above extesion so in future when you wil
 git checkout to branch
 git commit , add and push to branch normally
 
+
+# Steps i followed, are in "main" branch, later space was not available to work on another branch becasue the quota is full.
+
+### git lfs install
+### git lfs track "*.iso", "*.pdf", "*.gzip", "*.zip"
+### git add .gitattributes  --> it will add above extesion so in future when you will do some activity in branch , it will perform some oeratopn.
+### i added the files and when cloned teh same repo in different machine only pointers are copied but some git lfs was broken in ubuntu so further not able to work.
+### i created  lfs branch but further was not abel to complete.
+
 Complete Documentation
 In the repository ‘git_assignment_HeroVired’, create a branch ‘lfs’. Upload any large file whose size is over ‘200mb’ and try to push this file into the repository. 
 Like Git, Git LFS commands are separated into high level ("porcelain")
@@ -195,3 +204,8 @@ Swicthed back and tried bring back the stash but accidentl used the --index swic
 Deleted the change, again made some changes in both bran ch, swicthed in one and another.
 git stash apply stash@{} index to apply the stash from WIP list through git stash list.
 now will push both geometry calculator, and then to dev , will review ad push to main and create one more version.
+
+
+
+
+# Will merge dev to main as it does have calculator and geometry to make the final release. Thank you. Review done by Tilak , thank you.
