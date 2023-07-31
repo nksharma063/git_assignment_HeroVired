@@ -29,8 +29,6 @@ class Calculator:
     def div(self, a,b):
       return a / b
     
-    def sqrt(self, *args):
-       return self.math.sqrt(list(args))
                     
 if __name__ == "__main__":
    cal = Calculator()
@@ -38,7 +36,7 @@ if __name__ == "__main__":
    print(f"{cal.sub(16, 4, -4)}")
    print(f"{cal.mul(16, 4,-1)}")
    print(f"{cal.div(16, 4)}")
-   print(f"{cal.sqrt(16, 4 , 9, -4)}")
+  #  print(f"{cal.sqrt(16, 4 , 9, -4)}")
   
 
 # I am just making these changed to check fetch.
