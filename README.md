@@ -55,7 +55,7 @@ Git lfs will list all the details about lfs.
 This works in multiple way basically it hold the pointer in repo and upoad teh large file to git server and later you can download them for use.
 
 git lfs install
-git lfs track *.extension to select for put file in server.
+git lfs track "*.iso", "*.pdf", "*.gzip", "*.zip"
 git add .gitattributes  --> it will add above extesion so in future when you will do some activity in branch , it will perform some oeratopn.
 git checkout to branch
 git commit , add and push to branch normally
