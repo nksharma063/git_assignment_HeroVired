@@ -209,3 +209,4 @@ now will push both geometry calculator, and then to dev , will review ad push to
 
 
 # Will merge dev to main as it does have calculator and geometry to make the final release. Thank you. Review done by Tilak , thank you.
+# All major review happened in step procedural steps when mrgeing all other feaure branch to Dev branch, however when merging from dev to main was self reveiewed and sent for review to collaborator after merging.
